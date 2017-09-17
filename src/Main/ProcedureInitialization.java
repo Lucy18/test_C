@@ -7,6 +7,7 @@ import java.util.Map;
 
 import Entity.Schedule;
 import NetworkEntity.Network;
+import NetworkEntity.StationTimeNode;
 
 public class ProcedureInitialization {
 	
@@ -51,7 +52,24 @@ public class ProcedureInitialization {
 		}	
 		
 		//对每一个机场开始遍历，并生成节点
-		Iterator iter=stationMap.keySet().iterator();
+		Iterator<String> iter=stationMap.keySet().iterator();
+		while(iter.hasNext()){
+			
+			String key=(String)iter.next();
+			ArrayList<Schedule> sList=stationMap.get(key);
+			
+			for(int i=0;i<sList.size();i++){
+				
+				Schedule s=sList.get(i);
+				
+				StationTimeNode node=new StationTimeNode();
+				
+				node.setAircraftType(s.getAirType());
+				node.setStation(s.getOrigin());
+				
+			}
+			
+		}
 		
 		return null;
 		
