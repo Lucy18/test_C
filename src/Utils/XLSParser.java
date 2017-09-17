@@ -13,6 +13,12 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class XLSParser {
 	
+	/**
+	 * 
+	 * @param xlsx文件的路径
+	 * @param xlsx表的列数(因为只要解析蓝色部分，xlsx后面几列是解释，不用解析)
+	 * @return
+	 */
 	public String[][] readExcel(String path, int cols){
 		java.text.NumberFormat nf = java.text.NumberFormat.getInstance();
 		nf.setGroupingUsed(false);
