@@ -2,11 +2,11 @@ package NetworkEntity;
 
 public class Edge {
 	
-	private double delayCost;//�ӳٳɱ�
+	private double delayCost;//延迟成本
 	
-	private StationTimeNode source;//�����Ľڵ�
+	private StationTimeNode source;//出发的节点
 	
-	private StationTimeNode target;//����Ľڵ�
+	private StationTimeNode target;//到达的节点
 
 	public double getDelayCost() {
 		return delayCost;

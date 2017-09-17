@@ -4,26 +4,26 @@ import java.util.ArrayList;
 
 public  class StationTimeNode{
 	
-	private int type;//�ڵ����
+	private int type;//节点分类
 	
-	private int num;//�ڵ���
+	private int num;//节点编号
 	
-	private int mark;//�ڵ�markֵ
+	private int mark;//节点mark值
 	
-	private int indegree;//�ڵ����
+	private int indegree;//节点入度
 	
-	private int outdegree;//�ڵ����
+	private int outdegree;//节点出度
 	
-	private String station;//����
+	private String station;//机场
 	
-	private String aircraftType;//�ɻ��ͺţ�ǰ���ʿ��Բ���
+	private String aircraftType;//飞机型号，前两问可以不填
 	
-	private int availableTime;//����ʱ��
+	private int availableTime;//可用时间
 	
-	//�������ڵ�Ҫ�����ߣ����ְ����˵㣬�ظ�Ƕ�ײ����������
-	private ArrayList<Edge> inEdgeList;//�Ըõ�Ϊ�յ�ıߵļ���
+	//这样等于点要包含边，边又包含了点，重复嵌套不觉得奇怪吗
+	private ArrayList<Edge> inEdgeList;//以该点为终点的边的集合
 	
-	private ArrayList<Edge> outEdgeList;//�Ըõ�Ϊ���ıߵļ���
+	private ArrayList<Edge> outEdgeList;//以该点为起点的边的集合
 
 	public int getType() {
 		return type;

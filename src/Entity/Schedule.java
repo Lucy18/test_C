@@ -4,25 +4,25 @@ import java.util.Date;
 
 public class Schedule {
 	
-	private int flightID;//航班唯一编号
+	private int flightID;//鑸彮鍞竴缂栧彿
 	
-	private int startTime;//起飞时间
+	private int startTime;//璧烽鏃堕棿
 	
-	private int endTime;//到达时间
+	private int endTime;//鍒拌揪鏃堕棿
 	
-	private String origin;//起飞机场
+	private String origin;//璧烽鏈哄満
 	
-	private String destination;//到达机场
+	private String destination;//鍒拌揪鏈哄満
 	
-	private String airType;//飞机型号
+	private String airType;//椋炴満鍨嬪彿
 	
-	private String airNum;//飞机尾号
+	private String airNum;//椋炴満灏惧彿
 	
-	private int duration;//航班经历时间
+	private int duration;//鑸彮缁忓巻鏃堕棿
 	
-	private Date start;//以正常格式描述起飞时间，yyyy-mm-dd:hh-mm
+	private Date start;//浠ユ甯告牸寮忔弿杩拌捣椋炴椂闂达紝yyyy-mm-dd:hh-mm
 	
-	private Date end;//以正常格式描述到达时间，yyyy-mm-dd:hh-mm
+	private Date end;//浠ユ甯告牸寮忔弿杩板埌杈炬椂闂达紝yyyy-mm-dd:hh-mm
 
 	public int getFlightID() {
 		return flightID;

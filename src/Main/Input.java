@@ -8,21 +8,21 @@ import Entity.Schedule;
 
 public class Input {
 	
-	//����xlsparser�ķ�������ȡ���еķɻ���Ϣ
+	//调用xlsparser的方法，获取所有的飞机信息
 	public ArrayList<Aircraft> getAirCrafts(){
 		return null;
 	}
 	
-	//����xlsparser�ķ�������ȡ���е��ÿ���Ϣ
+	//调用xlsparser的方法，获取所有的旅客信息
 	public ArrayList<Passenger> getPassengers(){
 		return null;
 	}
 	
-	//����xlsparser�ķ�������ȡ���е��г���Ϣ
+	//调用xlsparser的方法，获取所有的行程信息
 	public ArrayList<Schedule> getSchedules(){
 		return null;
 	}
 	
-	//����xlsparser�ķ�������ȡ�ɻ����رյ���Ϣ
+	//调用xlsparser的方法，获取飞机场关闭的信息
 //	public 
 }

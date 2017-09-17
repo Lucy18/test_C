@@ -4,21 +4,21 @@ import java.util.Date;
 
 public class Aircraft {
 	
-	private String airType;//·É»úĞÍºÅ
+	private String airType;//é£æœºå‹å·
 	
-	private String airNum;//·É»ú±àºÅ
+	private String airNum;//é£æœºç¼–å·
 	
-	private int startAvailableTime;//×îÔç¿ÉÓÃÊ±¼ä£¬unix¸ñÊ½
+	private int startAvailableTime;//æœ€æ—©å¯ç”¨æ—¶é—´ï¼Œunixæ ¼å¼
 	
-	private int endAvailableTime;//×îÍí¿ÉÓÃÊ±¼ä£¬unix¸ñÊ½
+	private int endAvailableTime;//æœ€æ™šå¯ç”¨æ—¶é—´ï¼Œunixæ ¼å¼
 	
-	private String origin;//Æğµã»ú³¡
+	private String origin;//èµ·ç‚¹æœºåœº
 	
-	private int seat;//×ùÎ»Êı
+	private int seat;//åº§ä½æ•°
 	
-	private Date startDateTime;//ÒÔÕı³£¸ñÊ½ÃèÊö×îÔç¿ÉÓÃÊ±¼ä£¬yyyy-mm-dd:hh-mm
+	private Date startDateTime;//ä»¥æ­£å¸¸æ ¼å¼æè¿°æœ€æ—©å¯ç”¨æ—¶é—´ï¼Œyyyy-mm-dd:hh-mm
 	
-	private Date endDateTime;//ÒÔÕı³£¸ñÊ½ÃèÊö×îÍí¿ÉÓÃÊ±¼ä£¬yyyy-mm-dd:hh-mm
+	private Date endDateTime;//ä»¥æ­£å¸¸æ ¼å¼æè¿°æœ€æ™šå¯ç”¨æ—¶é—´ï¼Œyyyy-mm-dd:hh-mm
 
 	public String getAirType() {
 		return airType;
