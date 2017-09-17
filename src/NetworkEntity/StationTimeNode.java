@@ -1,29 +1,29 @@
-package Entity;
+package NetworkEntity;
 
 import java.util.ArrayList;
 
 public  class StationTimeNode{
 	
-	private int type;//½Úµã·ÖÀà
+	private int type;//ï¿½Úµï¿½ï¿½ï¿½ï¿½
 	
-	private int num;//½Úµã±àºÅ
+	private int num;//ï¿½Úµï¿½ï¿½ï¿½
 	
-	private int mark;//½ÚµãmarkÖµ
+	private int mark;//ï¿½Úµï¿½markÖµ
 	
-	private int indegree;//½ÚµãÈë¶È
+	private int indegree;//ï¿½Úµï¿½ï¿½ï¿½ï¿½
 	
-	private int outdegree;//½Úµã³ö¶È
+	private int outdegree;//ï¿½Úµï¿½ï¿½ï¿½ï¿½
 	
-	private String station;//»ú³¡
+	private String station;//ï¿½ï¿½ï¿½ï¿½
 	
-	private String aircraftType;//·É»úÐÍºÅ£¬Ç°Á½ÎÊ¿ÉÒÔ²»Ìî
+	private String aircraftType;//ï¿½É»ï¿½ï¿½ÍºÅ£ï¿½Ç°ï¿½ï¿½ï¿½Ê¿ï¿½ï¿½Ô²ï¿½ï¿½ï¿½
 	
-	private int availableTime;//¿ÉÓÃÊ±¼ä
+	private int availableTime;//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 	
-	//ÕâÑùµÈÓÚµãÒª°üº¬±ß£¬±ßÓÖ°üº¬ÁËµã£¬ÖØ¸´Ç¶Ì×²»¾õµÃÆæ¹ÖÂð
-	private ArrayList<Edge> inEdgeList;//ÒÔ¸ÃµãÎªÖÕµãµÄ±ßµÄ¼¯ºÏ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ö°ï¿½ï¿½ï¿½ï¿½Ëµã£¬ï¿½Ø¸ï¿½Ç¶ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private ArrayList<Edge> inEdgeList;//ï¿½Ô¸Ãµï¿½Îªï¿½Õµï¿½Ä±ßµÄ¼ï¿½ï¿½ï¿½
 	
-	private ArrayList<Edge> outEdgeList;//ÒÔ¸ÃµãÎªÆðµãµÄ±ßµÄ¼¯ºÏ
+	private ArrayList<Edge> outEdgeList;//ï¿½Ô¸Ãµï¿½Îªï¿½ï¿½ï¿½Ä±ßµÄ¼ï¿½ï¿½ï¿½
 
 	public int getType() {
 		return type;

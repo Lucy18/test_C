@@ -1,13 +1,13 @@
-package Entity;
+package NetworkEntity;
 
 import java.util.ArrayList;
 
 public class Network {
 	
-	//ËùÓÐµãµÄ¼¯ºÏ£¬°üÀ¨ÖÐ¼ä½ÚµãºÍ³ÁÃ»½Úµã
+	//ï¿½ï¿½ï¿½Ðµï¿½Ä¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½Úµï¿½Í³ï¿½Ã»ï¿½Úµï¿½
 	private ArrayList<StationTimeNode> nodeList;
 	
-	//ËùÓÐ±ßµÄ¼¯ºÏ£¬±ßµÄÄÚÈÝ°üÀ¨ËüµÄÆðµãºÍÖÕµã
+	//ï¿½ï¿½ï¿½Ð±ßµÄ¼ï¿½ï¿½Ï£ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½Ý°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½
 	private ArrayList<Edge> edgeList;
 
 	public ArrayList<StationTimeNode> getNodeList() {

@@ -1,12 +1,12 @@
-package Entity;
+package NetworkEntity;
 
 public class Edge {
 	
-	private double delayCost;//ÑÓ³Ù³É±¾
+	private double delayCost;//ï¿½Ó³Ù³É±ï¿½
 	
-	private StationTimeNode source;//³ö·¢µÄ½Úµã
+	private StationTimeNode source;//ï¿½ï¿½ï¿½ï¿½ï¿½Ä½Úµï¿½
 	
-	private StationTimeNode target;//µ½´ïµÄ½Úµã
+	private StationTimeNode target;//ï¿½ï¿½ï¿½ï¿½Ä½Úµï¿½
 
 	public double getDelayCost() {
 		return delayCost;
