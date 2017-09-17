@@ -9,6 +9,12 @@ public class Network {
 	
 	//所有边的集合，边的内容包括它的起点和终点
 	private ArrayList<Edge> edgeList;
+	
+	public Network(){
+		nodeList=new ArrayList<StationTimeNode>();
+		
+		edgeList=new ArrayList<Edge>();
+	}
 
 	public ArrayList<StationTimeNode> getNodeList() {
 		return nodeList;
