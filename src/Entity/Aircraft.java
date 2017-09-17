@@ -6,11 +6,11 @@ public class Aircraft {
 	
 	private String airType;//飞机型号
 	
-	private String airNum;//飞机编号
+	private String airNum;//飞机尾号
 	
-	private int startAvailableTime;//最早可用时间，unix格式
+	private long startAvailableTime;//最早可用时间，unix格式
 	
-	private int endAvailableTime;//最晚可用时间，unix格式
+	private long endAvailableTime;//最晚可用时间，unix格式
 	
 	private String origin;//起点机场
 	
@@ -19,6 +19,24 @@ public class Aircraft {
 	private Date startDateTime;//以正常格式描述最早可用时间，yyyy-mm-dd:hh-mm
 	
 	private Date endDateTime;//以正常格式描述最晚可用时间，yyyy-mm-dd:hh-mm
+
+
+	public Aircraft(){
+		
+	}
+	
+	public Aircraft(String airType, String airNum, long startAvailableTime, long endAvailableTime, String origin,
+			int seat, Date startDateTime, Date endDateTime) {
+		super();
+		this.airType = airType;
+		this.airNum = airNum;
+		this.startAvailableTime = startAvailableTime;
+		this.endAvailableTime = endAvailableTime;
+		this.origin = origin;
+		this.seat = seat;
+		this.startDateTime = startDateTime;
+		this.endDateTime = endDateTime;
+	}
 
 	public String getAirType() {
 		return airType;
@@ -36,19 +54,19 @@ public class Aircraft {
 		this.airNum = airNum;
 	}
 
-	public int getStartAvailableTime() {
+	public long getStartAvailableTime() {
 		return startAvailableTime;
 	}
 
-	public void setStartAvailableTime(int startAvailableTime) {
+	public void setStartAvailableTime(long startAvailableTime) {
 		this.startAvailableTime = startAvailableTime;
 	}
 
-	public int getEndAvailableTime() {
+	public long getEndAvailableTime() {
 		return endAvailableTime;
 	}
 
-	public void setEndAvailableTime(int endAvailableTime) {
+	public void setEndAvailableTime(long endAvailableTime) {
 		this.endAvailableTime = endAvailableTime;
 	}
 

@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Schedule {
 	
-	private int flightID;//航班唯一编号
+	private long flightID;//航班唯一编号
 	
-	private int startTime;//起飞时间
+	private long startTime;//起飞时间戳
 	
-	private int endTime;//到达时间
+	private long endTime;//到达时间戳
 	
 	private String origin;//起飞机场
 	
@@ -23,28 +23,47 @@ public class Schedule {
 	private Date start;//以正常格式描述起飞时间，yyyy-mm-dd:hh-mm
 	
 	private Date end;//以正常格式描述到达时间，yyyy-mm-dd:hh-mm
+	
+	public Schedule(){
+		
+	}
+	
+	public Schedule(long flightID, long startTime, long endTime, String origin, String destination, String airType,
+			String airNum, int duration, Date start, Date end) {
+		super();
+		this.flightID = flightID;
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.origin = origin;
+		this.destination = destination;
+		this.airType = airType;
+		this.airNum = airNum;
+		this.duration = duration;
+		this.start = start;
+		this.end = end;
+	}
 
-	public int getFlightID() {
+	public long getFlightID() {
 		return flightID;
 	}
 
-	public void setFlightID(int flightID) {
+	public void setFlightID(long flightID) {
 		this.flightID = flightID;
 	}
 
-	public int getStartTime() {
+	public long getStartTime() {
 		return startTime;
 	}
 
-	public void setStartTime(int startTime) {
+	public void setStartTime(long startTime) {
 		this.startTime = startTime;
 	}
 
-	public int getEndTime() {
+	public long getEndTime() {
 		return endTime;
 	}
 
-	public void setEndTime(int endTime) {
+	public void setEndTime(long endTime) {
 		this.endTime = endTime;
 	}
 

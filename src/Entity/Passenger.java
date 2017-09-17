@@ -4,9 +4,20 @@ public class Passenger {
 	
 	private int passengerNum;//旅客编号
 	
-	private int flightNum;//航班编号
+	private long flightNum;//航班编号
 	
 	private int companiedPaxNum;//同行旅客数量
+
+	public Passenger(){
+		
+	}
+	
+	public Passenger(int passengerNum, long flightNum, int companiedPaxNum) {
+		super();
+		this.passengerNum = passengerNum;
+		this.flightNum = flightNum;
+		this.companiedPaxNum = companiedPaxNum;
+	}
 
 	public int getPassengerNum() {
 		return passengerNum;
@@ -16,11 +27,11 @@ public class Passenger {
 		this.passengerNum = passengerNum;
 	}
 
-	public int getFlightNum() {
+	public long getFlightNum() {
 		return flightNum;
 	}
 
-	public void setFlightNum(int flightNum) {
+	public void setFlightNum(long flightNum) {
 		this.flightNum = flightNum;
 	}
 
